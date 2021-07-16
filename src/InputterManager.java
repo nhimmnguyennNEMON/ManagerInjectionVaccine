@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author SY NGUYEN
  */
-public class InputterPerson {
+public class InputterManager {
 
     public static Scanner sc = new Scanner(System.in);
 
@@ -76,7 +76,7 @@ public class InputterPerson {
             //System.out.print("Nhập dữ liệu: ");
             output = sc.nextLine().trim();
             if (output.equals("") || !output.matches(pattern)) {
-                System.err.println("Bạn phải nhập mã số tiêm chủng BN0000: [bnBN][\\d]{4}");
+                System.err.println("Bạn phải nhập mã số tiêm chủng V0000!");
             }
         } while (!output.matches(pattern));
 

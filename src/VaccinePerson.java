@@ -18,11 +18,12 @@ public class VaccinePerson {
     protected String address;
     protected String typeOfVaccine;
     protected String soLanTiem;
+    protected String isSymptom;
 
     public VaccinePerson() {
     }
 
-    public VaccinePerson(String name, String code, String gender, int age, String phoneNumber, String address, String typeOfVaccine, String soLanTiem) {
+    public VaccinePerson(String name, String code, String gender, int age, String phoneNumber, String address, String typeOfVaccine, String soLanTiem, String isSymptom) {
         this.name = name;
         this.code = code;
         this.gender = gender;
@@ -30,6 +31,8 @@ public class VaccinePerson {
         this.phoneNumber = phoneNumber;
         this.address = address;
         this.typeOfVaccine = typeOfVaccine;
+        this.soLanTiem = soLanTiem;
+        this.isSymptom = isSymptom;
     }
 
     public String getName() {
@@ -95,11 +98,20 @@ public class VaccinePerson {
     public void setSoLanTiem(String soLanTiem) {
         this.soLanTiem = soLanTiem;
     }
+
+    public String getIsSymptom() {
+        return isSymptom;
+    }
+
+    public void setIsSymptom(String isSymptom) {
+        this.isSymptom = isSymptom;
+    }
+    
     
 
     @Override
     public String toString() {
-        return "Thông tin người tiêm chủng: " + "\n-Họ Tên: " + name + "\n-Mã: " + code + "\n-Giới tính: " + gender + "\n-Tuổi: " + age + "\n-Số điện thoại: " + phoneNumber + "\n-Địa chỉ: " + address + "\n-Loại Vaccine: " + typeOfVaccine +"\n-Số lần tiêm chủng: " + soLanTiem;
+        return "Thông tin người tiêm chủng: " + "\n-Họ Tên: " + name + "\n-Mã: " + code + "\n-Giới tính: " + gender + "\n-Tuổi: " + age + "\n-Số điện thoại: " + phoneNumber + "\n-Địa chỉ: " + address + "\n-Loại Vaccine: " + typeOfVaccine +"\n-Số lần tiêm chủng: " + soLanTiem + "\n-Triệu chứng sau tiêm: " + isSymptom + "\n==========\n";
     }
     
    
